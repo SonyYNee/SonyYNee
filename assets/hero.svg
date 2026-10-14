@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+<title id="title">SonyYNee — Beyond the ordinary</title><desc id="desc">Identidade tecnológica com núcleo tridimensional, circuitos de luz animados e tipografia editorial.</desc>
+<defs>
+ <linearGradient id="base" x2="1" y2="1"><stop stop-color="#070b14"/><stop offset="1" stop-color="#0b1324"/></linearGradient>
+ <radialGradient id="aura"><stop stop-color="#385ef2" stop-opacity=".35"/><stop offset="1" stop-color="#385ef2" stop-opacity="0"/></radialGradient>
+ <linearGradient id="edge" x2="1" y2="1"><stop stop-color="#a9fbff"/><stop offset=".5" stop-color="#6196ff"/><stop offset="1" stop-color="#875bff"/></linearGradient>
+ <linearGradient id="face" x2="1" y2="1"><stop stop-color="#4686ff" stop-opacity=".35"/><stop offset="1" stop-color="#4d3ba8" stop-opacity=".1"/></linearGradient>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#6689bc" stroke-opacity=".055"/></pattern>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+ <clipPath id="clip"><rect x="1" y="1" width="1198" height="498" rx="24"/></clipPath>
+ <style>
+ text{font-family:'Segoe UI',Arial,sans-serif}.mono{font-family:'Cascadia Code',Consolas,monospace}
+ .core{animation:levitate 7s ease-in-out infinite}.ring{transform-origin:935px 245px;animation:rotate 40s linear infinite}
+ .flow{stroke-dasharray:2 14;animation:flow 6s linear infinite}.light{animation:light 4s ease-in-out infinite}.delay{animation-delay:2s}
+ .scan{animation:scan 8s ease-in-out infinite}.cursor{animation:blink 1.6s steps(2,end) infinite}
+ @keyframes levitate{50%{transform:translateY(-9px)}}@keyframes rotate{to{transform:rotate(360deg)}}
+ @keyframes flow{to{stroke-dashoffset:-128}}@keyframes light{50%{opacity:.25}}
+ @keyframes scan{0%,100%{transform:translateY(0);opacity:0}20%,80%{opacity:.6}90%{transform:translateY(130px);opacity:0}}
+ @keyframes blink{50%{opacity:0}}
+ @media(prefers-reduced-motion:reduce){.core,.ring,.flow,.light,.scan,.cursor{animation:none}}
+ </style>
+</defs>
+<g clip-path="url(#clip)">
+ <rect width="1200" height="500" fill="url(#base)"/><rect width="1200" height="500" fill="url(#grid)"/>
+ <ellipse cx="955" cy="230" rx="330" ry="320" fill="url(#aura)"/>
+ <path d="M0 1H410L455 14H710L755 1" fill="none" stroke="#93baff" stroke-opacity=".6"/>
+ <g class="mono" font-size="11" letter-spacing="2"><text x="54" y="50" fill="#7c91b0">SONYYNEE / PERSONAL SYSTEM</text><circle class="light" cx="1001" cy="46" r="3" fill="#b8fa71"/><text x="1014" y="50" fill="#b8fa71">BUILD MODE</text></g>
+ <path d="M54 86H114" stroke="#7bc8ff" stroke-width="2"/><text class="mono" x="128" y="90" fill="#7ba5d1" font-size="11" letter-spacing="3">DESIGN × CODE × INTELLIGENCE</text>
+ <text x="48" y="208" fill="#f1f5ff" font-size="100" font-weight="750" letter-spacing="-6">SonyYNee<tspan fill="#b8fa71">.</tspan></text>
+ <text x="55" y="268" fill="#97bcf4" font-size="31" font-weight="300" letter-spacing="1">Beyond the ordinary.</text>
+ <text x="56" y="313" fill="#8092ae" font-size="16">Transformando ideias em produtos digitais.</text>
+ <g class="mono" font-size="11" letter-spacing="1">
+  <rect x="55" y="351" width="132" height="30" rx="5" fill="#122039" stroke="#273b5a"/><text x="73" y="371" fill="#b9cef0">WEB SYSTEMS</text>
+  <rect x="199" y="351" width="143" height="30" rx="5" fill="#122039" stroke="#273b5a"/><text x="216" y="371" fill="#b9cef0">UI ENGINEERING</text>
+  <rect x="354" y="351" width="131" height="30" rx="5" fill="#122039" stroke="#273b5a"/><text x="371" y="371" fill="#b9cef0">AI WORKFLOWS</text>
+ </g>
+ <g fill="none" stroke="#547cbd" stroke-opacity=".23">
+  <circle cx="935" cy="245" r="157"/><circle cx="935" cy="245" r="191" stroke-dasharray="1 10"/>
+  <path d="M712 245H1158M935 22V468" stroke-dasharray="2 9"/>
+  <path d="M729 105H779V148M1090 105H1140V148M729 347V390H779M1090 390H1140V347"/>
+ </g>
+ <g class="ring" fill="none"><circle cx="935" cy="245" r="157" stroke="#77bcff" stroke-width="2" stroke-dasharray="63 924"/><circle cx="1092" cy="245" r="4" fill="#9fe3ff"/></g>
+ <g class="core">
+  <path d="M935 127L1038 186V305L935 364L832 305V186Z" fill="url(#face)" stroke="url(#edge)" stroke-width="1.5"/>
+  <path d="M832 186L935 245L1038 186M935 245V364M935 127V245M832 305L935 245L1038 305" stroke="#75a9ff" stroke-opacity=".4" fill="none"/>
+  <path d="M935 167L1003 206V284L935 323L867 284V206Z" fill="#152950" fill-opacity=".7" stroke="url(#edge)"/>
+  <path d="M867 206L935 245L1003 206M935 245V323" fill="none" stroke="#a1d9ff" stroke-opacity=".7"/>
+  <path d="M935 127L1038 186V305L935 364L832 305V186Z" class="flow" fill="none" stroke="#b2e5ff" stroke-width="3"/>
+  <path d="M935 201L973 223V267L935 289L897 267V223Z" fill="#08162f" stroke="#8bcfff" stroke-width="1.5"/>
+  <text class="mono" x="935" y="254" text-anchor="middle" fill="#d5eeff" font-size="24" font-weight="700">SY</text>
+  <g fill="#b8fa71"><circle class="light" cx="935" cy="127" r="4"/><circle class="light delay" cx="1038" cy="305" r="4"/><circle class="light" cx="832" cy="305" r="4"/></g>
+  <path class="scan" d="M868 185H1002" stroke="#b4e5ff" stroke-opacity=".5"/>
+ </g>
+ <text class="mono" x="935" y="449" text-anchor="middle" fill="#536e96" font-size="10" letter-spacing="3">CREATIVE ENGINE / ALWAYS EVOLVING</text>
+ <path d="M55 425H625" stroke="#1e304d"/><text class="mono" x="55" y="456" fill="#637c9f" font-size="11">&gt; build something worth using<tspan class="cursor" fill="#b8fa71">_</tspan></text>
+</g>
+<rect x="1" y="1" width="1198" height="498" rx="24" fill="none" stroke="#273956"/>
+</svg>
