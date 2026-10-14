@@ -4,6 +4,7 @@ O GitHub exibe o README.md deste repositório no perfil SonyYNee porque o reposi
 
 - Edite `README.md` para mudar apresentação, ferramentas e áreas de atuação.
 - O banner atual é original, vetorial e editável em `assets/hero.svg`. As animações ficam no bloco `<style>`; as cores são definidas no próprio SVG.
+- `assets/craft.svg` apresenta as três áreas de atuação. Os três desenhos usam a mesma paleta; a direção completa está em DESIGN.md.
 - O banner não usa scripts nem serviços de animação externos. A preferência por movimento reduzido desativa os efeitos nos navegadores que a respeitam.
 - A arena em `assets/activity-arena.svg` é gerada com [snk](https://github.com/Platane/snk), a partir do calendário real. Não são criadas atividades fictícias. Ela é uma animação no README, não altera o calendário nativo do GitHub nem é um jogo controlável pelo teclado.
 - `.github/workflows/activity.yml` agenda a atualização diária e permite executar manualmente em Actions → Atualizar cobrinha de contribuições → Run workflow. Depende da disponibilidade do GitHub Actions e de permissões de escrita do token automático.

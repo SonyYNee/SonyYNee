@@ -1,58 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-<title id="title">SonyYNee — Além do comum</title><desc id="desc">Identidade tecnológica com núcleo tridimensional, circuitos de luz animados e tipografia editorial.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">SonyYNee — Da ideia ao extraordinário.</title><desc id="desc">Perfil de desenvolvimento, design e inteligência artificial. Escultura de linhas em movimento suave, tons de lavanda e verde mineral.</desc>
 <defs>
- <linearGradient id="base" x2="1" y2="1"><stop stop-color="#070b14"/><stop offset="1" stop-color="#0b1324"/></linearGradient>
- <radialGradient id="aura"><stop stop-color="#385ef2" stop-opacity=".35"/><stop offset="1" stop-color="#385ef2" stop-opacity="0"/></radialGradient>
- <linearGradient id="edge" x2="1" y2="1"><stop stop-color="#a9fbff"/><stop offset=".5" stop-color="#6196ff"/><stop offset="1" stop-color="#875bff"/></linearGradient>
- <linearGradient id="face" x2="1" y2="1"><stop stop-color="#4686ff" stop-opacity=".35"/><stop offset="1" stop-color="#4d3ba8" stop-opacity=".1"/></linearGradient>
- <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#6689bc" stroke-opacity=".055"/></pattern>
- <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
- <clipPath id="clip"><rect x="1" y="1" width="1198" height="498" rx="24"/></clipPath>
- <style>
- text{font-family:'Segoe UI',Arial,sans-serif}.mono{font-family:'Cascadia Code',Consolas,monospace}
- .core{animation:levitate 7s ease-in-out infinite}.ring{transform-origin:935px 245px;animation:rotate 40s linear infinite}
- .flow{stroke-dasharray:2 14;animation:flow 6s linear infinite}.light{animation:light 4s ease-in-out infinite}.delay{animation-delay:2s}
- .scan{animation:scan 8s ease-in-out infinite}.cursor{animation:blink 1.6s steps(2,end) infinite}
- @keyframes levitate{50%{transform:translateY(-9px)}}@keyframes rotate{to{transform:rotate(360deg)}}
- @keyframes flow{to{stroke-dashoffset:-128}}@keyframes light{50%{opacity:.25}}
- @keyframes scan{0%,100%{transform:translateY(0);opacity:0}20%,80%{opacity:.6}90%{transform:translateY(130px);opacity:0}}
- @keyframes blink{50%{opacity:0}}
- @media(prefers-reduced-motion:reduce){.core,.ring,.flow,.light,.scan,.cursor{animation:none}}
- </style>
+<linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#141723"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#9480ca" stop-opacity=".13"/><stop offset="1" stop-color="#9480ca" stop-opacity="0"/></radialGradient>
+<linearGradient id="thread" x2="1" y2="1"><stop stop-color="#b9efda"/><stop offset=".4" stop-color="#d2c6ff"/><stop offset="1" stop-color="#75649c"/></linearGradient>
+<clipPath id="bounds"><rect x="1" y="1" width="1198" height="418" rx="20"/></clipPath>
+<style>text{font-family:'Segoe UI',Arial,sans-serif}.sculpture{transform-origin:940px 204px;animation:turn 75s linear infinite}.breath{animation:breath 12s ease-in-out infinite}@keyframes turn{to{transform:rotate(360deg)}}@keyframes breath{50%{opacity:.55}}@media(prefers-reduced-motion:reduce){.sculpture,.breath{animation:none}}</style>
 </defs>
-<g clip-path="url(#clip)">
- <rect width="1200" height="500" fill="url(#base)"/><rect width="1200" height="500" fill="url(#grid)"/>
- <ellipse cx="955" cy="230" rx="330" ry="320" fill="url(#aura)"/>
- <path d="M0 1H410L455 14H710L755 1" fill="none" stroke="#93baff" stroke-opacity=".6"/>
- <g class="mono" font-size="11" letter-spacing="2"><text x="54" y="50" fill="#7c91b0">SONYYNEE / SISTEMA PESSOAL</text><circle class="light" cx="1001" cy="46" r="3" fill="#b8fa71"/><text x="1014" y="50" fill="#b8fa71">EM CRIAÇÃO</text></g>
- <path d="M54 86H114" stroke="#7bc8ff" stroke-width="2"/><text class="mono" x="128" y="90" fill="#7ba5d1" font-size="11" letter-spacing="3">DESIGN × CÓDIGO × INTELIGÊNCIA</text>
- <text x="48" y="208" fill="#f1f5ff" font-size="100" font-weight="750" letter-spacing="-6">SonyYNee<tspan fill="#b8fa71">.</tspan></text>
- <text x="55" y="268" fill="#97bcf4" font-size="31" font-weight="300" letter-spacing="1">Além do comum.</text>
- <text x="56" y="313" fill="#8092ae" font-size="16">Transformando ideias em produtos digitais.</text>
- <g class="mono" font-size="11" letter-spacing="1">
-  <rect x="55" y="351" width="132" height="30" rx="5" fill="#122039" stroke="#273b5a"/><text x="73" y="371" fill="#b9cef0">SISTEMAS WEB</text>
-  <rect x="199" y="351" width="143" height="30" rx="5" fill="#122039" stroke="#273b5a"/><text x="216" y="371" fill="#b9cef0">INTERFACES</text>
-  <rect x="354" y="351" width="131" height="30" rx="5" fill="#122039" stroke="#273b5a"/><text x="371" y="371" fill="#b9cef0">AUTOMAÇÃO IA</text>
- </g>
- <g fill="none" stroke="#547cbd" stroke-opacity=".23">
-  <circle cx="935" cy="245" r="157"/><circle cx="935" cy="245" r="191" stroke-dasharray="1 10"/>
-  <path d="M712 245H1158M935 22V468" stroke-dasharray="2 9"/>
-  <path d="M729 105H779V148M1090 105H1140V148M729 347V390H779M1090 390H1140V347"/>
- </g>
- <g class="ring" fill="none"><circle cx="935" cy="245" r="157" stroke="#77bcff" stroke-width="2" stroke-dasharray="63 924"/><circle cx="1092" cy="245" r="4" fill="#9fe3ff"/></g>
- <g class="core">
-  <path d="M935 127L1038 186V305L935 364L832 305V186Z" fill="url(#face)" stroke="url(#edge)" stroke-width="1.5"/>
-  <path d="M832 186L935 245L1038 186M935 245V364M935 127V245M832 305L935 245L1038 305" stroke="#75a9ff" stroke-opacity=".4" fill="none"/>
-  <path d="M935 167L1003 206V284L935 323L867 284V206Z" fill="#152950" fill-opacity=".7" stroke="url(#edge)"/>
-  <path d="M867 206L935 245L1003 206M935 245V323" fill="none" stroke="#a1d9ff" stroke-opacity=".7"/>
-  <path d="M935 127L1038 186V305L935 364L832 305V186Z" class="flow" fill="none" stroke="#b2e5ff" stroke-width="3"/>
-  <path d="M935 201L973 223V267L935 289L897 267V223Z" fill="#08162f" stroke="#8bcfff" stroke-width="1.5"/>
-  <text class="mono" x="935" y="254" text-anchor="middle" fill="#d5eeff" font-size="24" font-weight="700">SY</text>
-  <g fill="#b8fa71"><circle class="light" cx="935" cy="127" r="4"/><circle class="light delay" cx="1038" cy="305" r="4"/><circle class="light" cx="832" cy="305" r="4"/></g>
-  <path class="scan" d="M868 185H1002" stroke="#b4e5ff" stroke-opacity=".5"/>
- </g>
- <text class="mono" x="935" y="449" text-anchor="middle" fill="#536e96" font-size="10" letter-spacing="3">NÚCLEO CRIATIVO / EVOLUÇÃO CONTÍNUA</text>
- <path d="M55 425H625" stroke="#1e304d"/><text class="mono" x="55" y="456" fill="#637c9f" font-size="11">&gt; criar algo que faça a diferença<tspan class="cursor" fill="#b8fa71">_</tspan></text>
-</g>
-<rect x="1" y="1" width="1198" height="498" rx="24" fill="none" stroke="#273956"/>
+<g clip-path="url(#bounds)">
+<rect width="1200" height="420" fill="url(#surface)"/>
+<ellipse cx="935" cy="203" rx="255" ry="250" fill="url(#halo)"/>
+<text x="50" y="56" fill="#e6edf3" font-size="24" font-weight="600" letter-spacing="-.8">SonyYNee<tspan fill="#b9efda">.</tspan></text>
+<text x="1150" y="53" text-anchor="end" fill="#99a3b3" font-size="11" letter-spacing="2">DESENVOLVIMENTO · DESIGN · IA</text>
+<path d="M50 84H1150" stroke="#858296" stroke-opacity=".18"/>
+<text x="48" y="169" fill="#e6edf3" font-size="58" font-weight="350" letter-spacing="-2">Da ideia</text>
+<text x="48" y="236" fill="#d2c6ff" font-family="Georgia,serif" font-size="64" font-style="italic" letter-spacing="-2" style="font-family:Georgia,serif">ao extraordinário.</text>
+<text x="51" y="282" fill="#a5adba" font-size="17">Interfaces claras. Sistemas inteligentes.</text>
+<text x="51" y="309" fill="#a5adba" font-size="17">Cuidado em cada detalhe.</text>
+<g class="sculpture" fill="none" stroke="url(#thread)" stroke-width="1.1"><path d="M793 204 C880 84 1000 324 1087 204" opacity="0.18"/>
+<path d="M793.5917787826999 190.82302159119527 C895.1773360578841 84 984.8226639421159 324 1086.4082212173003 217.17697840880473" opacity="0.21227015120523604"/>
+<path d="M795.3623504760014 177.75213646460043 C909.8668600469141 84 970.1331399530859 324 1084.6376495239986 230.24786353539957" opacity="0.2442804821275092"/>
+<path d="M798.2974594777096 164.89258370169875 C923.596438579502 84 956.403561420498 324 1081.7025405222905 243.10741629830125" opacity="0.275773264404003"/>
+<path d="M802.3734740159587 152.3479008600426 C935.9247917048756 84 944.0752082951244 324 1077.6265259840413 255.6520991399574" opacity="0.30649493666928335"/>
+<path d="M807.5575764183444 140.21909034971895 C946.4556760097826 84 933.5443239902174 324 1072.4424235816557 267.78090965028105" opacity="0.3361981460823209"/>
+<path d="M813.8080273405257 128.6038062213318 C954.8506202078228 84 925.1493797921772 324 1066.1919726594742 279.3961937786682" opacity="0.3646437398661262"/>
+<path d="M821.0745018268827 117.59556791300645 C960.839803885088 84 919.160196114912 324 1058.9254981731174 290.40443208699355" opacity="0.3916026908252903"/>
+<path d="M829.2984944974692 107.28300728686224 C964.2307297502743 84 915.7692702497255 324 1050.7015055025308 300.71699271313776" opacity="0.4168579413382965"/>
+<path d="M838.4137905989309 97.74915501737344 C964.9144106560118 84 915.0855893439882 324 1041.586209401069 310.2508449826266" opacity="0.4402061509778609"/>
+<path d="M848.3469991267661 89.07077207719962 C962.868872535455 84 917.131127464545 324 1031.6530008732339 318.92922792280035" opacity="0.46145933368849074"/>
+<path d="M859.0181437265409 81.31773170296853 C958.1598606668733 84 921.8401393331267 324 1020.9818562734591 326.68226829703144" opacity="0.4804463713396689"/>
+<path d="M870.3413066164692 74.55245681705952 C950.9387265663107 84 929.0612734336893 324 1009.6586933835308 333.4475431829405" opacity="0.4970143914684257"/>
+<path d="M882.2253203468732 68.82941743493677 C941.4375634253283 84 938.5624365746717 324 997.7746796531268 339.1705825650632" opacity="0.5110299981185222"/>
+<path d="M894.5745018268827 64.19469210461244 C929.9617464448602 84 950.0382535551398 324 985.4254981731173 343.80530789538756" opacity="0.5223803458662553"/>
+<path d="M907.2894227084217 60.685596909271936 C916.8801178249925 84 963.1198821750075 324 972.7105772915783 347.3144030907281" opacity="0.5309740483854565"/>
+<path d="M920.2677099248046 58.330385020113596 C902.6131318731674 84 977.3868681268326 324 959.7322900751954 349.66961497988643" opacity="0.5367419142364565"/>
+<path d="M933.4048699384743 57.148019218426754 C887.6193412567918 84 992.3806587432082 324 946.5951300615257 350.8519807815733" opacity="0.5396375039548733"/>
+<path d="M946.5951300615257 57.148019218426725 C872.3806587432082 84 1007.6193412567918 324 933.4048699384743 350.8519807815733" opacity="0.5396375039548733"/>
+<path d="M959.7322900751954 58.330385020113596 C857.3868681268326 84 1022.6131318731674 324 920.2677099248046 349.66961497988643" opacity="0.5367419142364565"/>
+<path d="M972.7105772915781 60.685596909271936 C843.1198821750075 84 1036.8801178249923 324 907.2894227084219 347.3144030907281" opacity="0.5309740483854565"/>
+<path d="M985.4254981731173 64.19469210461241 C830.0382535551398 84 1049.9617464448602 324 894.5745018268827 343.8053078953876" opacity="0.5223803458662553"/>
+<path d="M997.7746796531268 68.82941743493674 C818.5624365746718 84 1061.4375634253283 324 882.2253203468732 339.1705825650632" opacity="0.5110299981185222"/>
+<path d="M1009.6586933835308 74.55245681705952 C809.0612734336893 84 1070.9387265663108 324 870.3413066164692 333.4475431829405" opacity="0.4970143914684257"/>
+<path d="M1020.981856273459 81.31773170296852 C801.8401393331267 84 1078.1598606668733 324 859.018143726541 326.6822682970315" opacity="0.48044637133966894"/>
+<path d="M1031.6530008732339 89.0707720771996 C797.131127464545 84 1082.868872535455 324 848.3469991267661 318.9292279228004" opacity="0.46145933368849074"/>
+<path d="M1041.586209401069 97.74915501737344 C795.0855893439882 84 1084.9144106560118 324 838.413790598931 310.2508449826266" opacity="0.4402061509778609"/>
+<path d="M1050.7015055025308 107.28300728686223 C795.7692702497255 84 1084.2307297502743 324 829.2984944974692 300.71699271313776" opacity="0.41685794133829657"/>
+<path d="M1058.9254981731174 117.59556791300643 C799.160196114912 84 1080.839803885088 324 821.0745018268827 290.40443208699355" opacity="0.39160269082529037"/>
+<path d="M1066.1919726594742 128.60380622133178 C805.1493797921772 84 1074.8506202078229 324 813.8080273405257 279.39619377866825" opacity="0.3646437398661262"/>
+<path d="M1072.4424235816555 140.21909034971895 C813.5443239902174 84 1066.4556760097826 324 807.5575764183444 267.78090965028105" opacity="0.33619814608232096"/>
+<path d="M1077.6265259840413 152.3479008600426 C824.0752082951244 84 1055.9247917048756 324 802.3734740159587 255.6520991399574" opacity="0.3064949366692834"/>
+<path d="M1081.7025405222905 164.89258370169875 C836.4035614204979 84 1043.596438579502 324 798.2974594777096 243.10741629830125" opacity="0.27577326440400307"/>
+<path d="M1084.6376495239986 177.7521364646004 C850.1331399530859 84 1029.866860046914 324 795.3623504760014 230.2478635353996" opacity="0.24428048212750922"/>
+<path d="M1086.4082212173003 190.82302159119524 C864.8226639421159 84 1015.1773360578841 324 793.5917787826999 217.17697840880476" opacity="0.2122701512052361"/></g>
+<circle class="breath" cx="940" cy="204" r="151" fill="none" stroke="#b6a5e1" stroke-opacity=".12"/>
+<path d="M50 355H1150" stroke="#858296" stroke-opacity=".18"/>
+<circle cx="55" cy="385" r="3" fill="#b9efda"/>
+<text x="69" y="389" fill="#a5adba" font-size="11" letter-spacing="1">CONSTRUINDO COM INTENÇÃO</text>
+<text x="1150" y="389" text-anchor="end" fill="#8c94a5" font-size="11" letter-spacing="1">CÓDIGO · CLAREZA · EVOLUÇÃO</text>
+</g><rect x="1" y="1" width="1198" height="418" rx="20" fill="none" stroke="#858296" stroke-opacity=".25"/>
 </svg>

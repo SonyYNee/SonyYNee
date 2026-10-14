@@ -12,39 +12,33 @@ const activeDays = days.filter((day) => day.count > 0).length;
 const [snake] = await generateSnakeAnimation(source, [{
   format: 'svg',
   drawOptions: {
-    colorDots: { 1: '#234d75', 2: '#367fa6', 3: '#5ccccc', 4: '#a8edb0' },
-    colorEmpty: '#111e32', colorDotBorder: '#1b304c', colorSnake: '#b8fa71',
+    colorDots: { 1: '#3f365b', 2: '#655393', 3: '#9480ca', 4: '#d2c6ff' },
+    colorEmpty: '#171d28', colorDotBorder: '#29303e', colorSnake: '#b9efda',
     sizeCell: 16, sizeDot: 12, sizeDotBorderRadius: 3,
   },
-  animationOptions: { stepDurationMs: 110, frameByStep: 1 },
+  animationOptions: { stepDurationMs: 150, frameByStep: 1 },
 }]);
 if (typeof snake !== 'string' || !snake.includes('<svg')) throw new Error('Falha ao gerar a cobrinha.');
 const embedded = snake
   .replace(/<\?xml[^>]*>/g, '')
   .replace(/<svg\b[^>]*>/, (tag) => tag
     .replace(/\s(?:width|height)="[^"]*"/g, '')
-    .replace('<svg', '<svg x="44" y="148" width="1112" height="210" preserveAspectRatio="xMidYMid meet"'));
-const now = new Date().toISOString().slice(0, 10);
-const arena = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="arena-title arena-desc">
-<title id="arena-title">Cobrinha de contribuições — SonyYNee</title>
-<desc id="arena-desc">Cobrinha animada que consome os dias ativos do calendário real de contribuições do GitHub. ${total} contribuições visíveis em ${activeDays} dias ativos.</desc>
-<defs><linearGradient id="arena-bg" x2="1" y2="1"><stop stop-color="#080e1b"/><stop offset="1" stop-color="#0b1728"/></linearGradient></defs>
-<style>text{font-family:'Cascadia Code',Consolas,monospace}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect x="1" y="1" width="1198" height="438" rx="22" fill="url(#arena-bg)" stroke="#273956"/>
-<rect x="28" y="29" width="4" height="23" rx="2" fill="#b8fa71"/>
-<text x="48" y="47" fill="#e9f2ff" font-size="19" font-weight="700" letter-spacing="1">COBRINHA DE CONTRIBUIÇÕES</text>
-<text x="48" y="75" fill="#6d88ad" font-size="11" letter-spacing="1">SEU CÓDIGO VIRA O MAPA. CADA DIA ATIVO VIRA ENERGIA.</text>
-<rect x="942" y="29" width="211" height="31" rx="5" fill="#142539" stroke="#32516b"/>
-<circle cx="959" cy="45" r="3" fill="#b8fa71"/><text x="971" y="49" fill="#a6c0dc" font-size="10" letter-spacing="1">ATIVIDADE REAL</text>
-<path d="M46 105H1154" stroke="#1c304c"/>
-<text x="48" y="131" fill="#7c96b7" font-size="10">JOGADOR / SONYYNEE</text>
-<text x="1152" y="131" text-anchor="end" fill="#7c96b7" font-size="10">${total} CONTRIBUIÇÕES · ${activeDays} ${activeDays === 1 ? 'DIA ATIVO' : 'DIAS ATIVOS'}</text>
+    .replace('<svg', '<svg x="38" y="124" width="1124" height="208" preserveAspectRatio="xMidYMid meet"'));
+const now = new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+const arena = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="398" viewBox="0 0 1200 398" role="img" aria-labelledby="arena-title arena-desc">
+<title id="arena-title">O ritmo de quem constrói — SonyYNee</title>
+<desc id="arena-desc">Cobrinha animada com os dias ativos do calendário real de contribuições do GitHub. ${total} contribuições visíveis. Atualizado em ${now}.</desc>
+<style>text{font-family:'Segoe UI',Arial,sans-serif}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect x="1" y="1" width="1198" height="396" rx="20" fill="#0d1117" stroke="#858296" stroke-opacity=".25"/>
+<text x="42" y="42" fill="#b9efda" font-size="11" letter-spacing="2">ATIVIDADE EM MOVIMENTO</text>
+<text x="40" y="83" fill="#e6edf3" font-size="32" font-weight="350" letter-spacing="-.5">O ritmo de quem constrói.</text>
+<text x="1156" y="78" text-anchor="end" fill="#a5adba" font-size="13">Contribuições reais · últimos 12 meses</text>
 ${embedded}
-<path d="M46 371H1154" stroke="#1c304c"/>
-<rect x="48" y="398" width="8" height="8" rx="2" fill="#b8fa71"/><text x="66" y="405" fill="#abc6dd" font-size="10">COBRINHA</text>
-<rect x="150" y="398" width="8" height="8" rx="2" fill="#5ccccc"/><text x="168" y="405" fill="#abc6dd" font-size="10">DIA ATIVO</text>
-<text x="1152" y="405" text-anchor="end" fill="#617f9f" font-size="10">ATUALIZADO ${now} / ÚLTIMOS 12 MESES</text>
+<path d="M42 343H1158" stroke="#858296" stroke-opacity=".18"/>
+<circle cx="47" cy="370" r="3" fill="#b9efda"/><text x="59" y="374" fill="#a5adba" font-size="11">Cobrinha</text>
+<circle cx="142" cy="370" r="3" fill="#d2c6ff"/><text x="154" y="374" fill="#a5adba" font-size="11">Dias ativos</text>
+<text x="1156" y="374" text-anchor="end" fill="#8c94a5" font-size="11">Atualizado em ${now}</text>
 </svg>`;
 await fs.mkdir('assets', { recursive: true });
 await fs.writeFile('assets/activity-arena.svg', arena);
-console.log(`Arena gerada: ${total} contribuições / ${activeDays} dias ativos.`);
+console.log(`Arena gerada com ${total} contribuições reais.`);
