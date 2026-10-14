@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" alt="SonyYNee — Beyond the ordinary. Design, código e inteligência." width="100%" />
+  <img src="./assets/hero.svg" alt="SonyYNee — Além do comum. Design, código e inteligência." width="100%" />
 </p>
 
 <p align="center">
@@ -9,18 +9,18 @@
 
 <br />
 
-### `01 / ABOUT THE BUILDER`
+### `01 / QUEM SOU`
 
 Sou **SonyYNee**. Transformo operações complexas em sistemas claros e ideias em produtos que as pessoas conseguem usar.
 
-Construo dashboards, ferramentas de gestão e experiências web com atenção à interface, às regras de negócio e à evolução do código. Meu ponto de encontro é entre **design, engenharia e inteligência artificial**.
+Construo painéis de gestão, ferramentas de gestão e experiências web com atenção à interface, às regras de negócio e à evolução do código. Meu ponto de encontro é entre **design, engenharia e inteligência artificial**.
 
 <br />
 
-### `02 / THE ACTIVITY ARCADE`
+### `02 / ARENA DE CONTRIBUIÇÕES`
 
 <p align="center">
-  <img src="./assets/activity-arena.svg" alt="Contribution Snake: uma cobrinha percorre meu calendário real de contribuições e consome os dias ativos." width="100%" />
+  <img src="./assets/activity-arena.svg" alt="Cobrinha de contribuições: uma cobrinha percorre meu calendário real de contribuições e consome os dias ativos." width="100%" />
 </p>
 
 <p align="center">
@@ -30,26 +30,26 @@ Construo dashboards, ferramentas de gestão e experiências web com atenção à
 
 <br />
 
-### `03 / WHAT I BUILD`
+### `03 / O QUE CONSTRUO`
 
 | Interfaces | Sistemas | Inteligência |
 | :--- | :--- | :--- |
-| Experiências web com identidade, clareza e atenção aos detalhes. | Dashboards, finanças, documentos e operações conectadas. | Automações e ferramentas de IA aplicadas ao desenvolvimento. |
+| Experiências web com identidade, clareza e atenção aos detalhes. | Painéis, finanças, documentos e operações conectadas. | Automações e ferramentas de IA aplicadas ao desenvolvimento. |
 
 <br />
 
-### `04 / TOOLKIT`
+### `04 / FERRAMENTAS`
 
 ```text
 INTERFACE     HTML · CSS · JavaScript
-ENGINE        Node.js · SQLite · APIs
-WORKFLOW      Git · GitHub · Playwright · IA
-PRINCIPLE     Construir → testar → refinar → evoluir
+SERVIDOR      Node.js · SQLite · APIs
+FLUXO         Git · GitHub · Playwright · IA
+PRINCÍPIO     Construir → testar → refinar → evoluir
 ```
 
 <br />
 
 <p align="center">
   <strong>O próximo nível começa no próximo commit.</strong><br />
-  <sub>Designed to stand out. Built to keep evolving.</sub>
+  <sub>Criado para marcar. Construído para evoluir.</sub>
 </p>

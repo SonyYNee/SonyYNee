@@ -6,7 +6,7 @@ O GitHub exibe o README.md deste repositório no perfil SonyYNee porque o reposi
 - O banner atual é original, vetorial e editável em `assets/hero.svg`. As animações ficam no bloco `<style>`; as cores são definidas no próprio SVG.
 - O banner não usa scripts nem serviços de animação externos. A preferência por movimento reduzido desativa os efeitos nos navegadores que a respeitam.
 - A arena em `assets/activity-arena.svg` é gerada com [snk](https://github.com/Platane/snk), a partir do calendário real. Não são criadas atividades fictícias. Ela é uma animação no README, não altera o calendário nativo do GitHub nem é um jogo controlável pelo teclado.
-- `.github/workflows/activity.yml` agenda a atualização diária e permite executar manualmente em Actions → Update contribution snake → Run workflow. Depende da disponibilidade do GitHub Actions e de permissões de escrita do token automático.
+- `.github/workflows/activity.yml` agenda a atualização diária e permite executar manualmente em Actions → Atualizar cobrinha de contribuições → Run workflow. Depende da disponibilidade do GitHub Actions e de permissões de escrita do token automático.
 - Para gerar localmente: Node 24, `npm ci`, defina `GITHUB_TOKEN` apenas no ambiente e execute `npm run generate`. Não grave tokens em arquivos ou commits. O workflow usa o token efêmero fornecido pelo próprio GitHub.
 - Os dados refletem o calendário visível conforme as configurações de contribuição da conta. Nomes de repositórios privados e informações de clientes não são publicados. O total não é uma estimativa de todo trabalho realizado fora do GitHub.
 
